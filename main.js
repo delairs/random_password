@@ -23,8 +23,7 @@ function getPw(){
 
 
 function savePw(){
-    document.title = password.value;
-    saveButton.setAttribute('href', 'data:text/plain;charset=utf-8' + encodeURIComponent(`password saya: ${document.title}`));
-    saveButton.setAttribute('download', 'MyPassword.txt');
-    return false;
+    document.title = password.value
+    saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`password saya: ${document.title}`))
+    saveButton.setAttribute('download', 'MyPasswordLOG.txt');
 }
